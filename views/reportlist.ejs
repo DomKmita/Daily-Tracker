@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <div class="wrapper">
+        <h1 class=titleCenter><%= title %></h1>
+        <body>
+            <table class="table-inverse">
+    <thead>
+      <tr>
+        <th> username </th>
+        <th> education </th>
+        <th> shopping </th>
+        <th> browse </th>
+        <th> social </th>
+        <th> date </th>
+
+      </tr>
+    </thead>
+
+    
+    <% var educationTot = 0 %>
+    <% var shoppingTot = 0 %>
+    <% var browseTot = 0 %>
+    <% var socialTot = 0 %>
+    <% var entryTot = reportlist.length %>
+    <% var totTot = 0 %>
+  
+
+    <tbody>
+      <% for(var i=0; i < reportlist.length; i++) { %>
+     <tr>
+
+       <td><%= reportlist[i].username %></td>
+       <td><%= reportlist[i].education %></td>
+       <td><%= reportlist[i].shopping %></td>
+       <td><%= reportlist[i].browse %></td>
+       <td><%= reportlist[i].social %></td>
+       <td><%= reportlist[i].date %></td>
+
+       
+       <% educationTot += reportlist[i].education %>
+       <% shoppingTot += reportlist[i].shopping %>
+       <% browseTot += reportlist[i].browse %>
+       <% socialTot += reportlist[i].social %>
+       
+     </tr>
+
+  <% } %>
+
+</tbody>
+
+  <table class="table-inverse-bold">
+    <thead>
+      <tr>
+        <br> 
+        <hr class="line">
+        <br> <br> 
+
+        <th> </th>
+        <th> education </th>
+        <th> shopping </th>
+        <th> browse </th>
+        <th> social </th>
+        <th> Collective Total </th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+<tr>
+
+  <% totTot = (educationTot + shoppingTot + browseTot + socialTot) %>
+  <td>Total Time</td>
+  <td><%= educationTot %></td>
+  <td><%= shoppingTot %></td>
+  <td><%= browseTot %></td>
+  <td><%= socialTot %></td>
+  <td><%= totTot %></td>
+  </tr>
+
+  <tr>
+
+    <td>Average Time</td>
+    <td><%= Math.floor(educationTot / entryTot) %></td>
+    <td><%= Math.floor(shoppingTot/ entryTot) %></td>
+    <td><%= Math.floor(browseTot/ entryTot) %></td>
+    <td><%= Math.floor(socialTot/ entryTot) %></td>
+    <td><%= Math.floor(totTot/ entryTot) %></td>
+    </tr>
+</tbody>
+</table>
+
+
+
+</body>
+<% include partials/foot %>
+
+</html>

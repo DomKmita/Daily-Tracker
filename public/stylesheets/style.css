@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  font-size: 13px;
+  line-height: 1.5;
+  color: white;
+  overflow-y: scroll;
+  background: #ff5e3e;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: Nunito;
+}
+a {
+  text-decoration: none;
+  color: White;
+}
+
+header {
+  margin-bottom: 20px;
+  background: #ff2f00;
+}
+.wrapper {
+  max-width: 970px;
+  overflow: hidden;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  float: left;
+  line-height: 52px;
+  /* margin: 0 2px; */
+}
+li a {
+  line-height: 52px;
+  display: block;
+  height: 52px;
+  color: white;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.nv {
+  text-align: right;
+}
+a:hover {
+  /* background: #f9f9f9f9; */
+  color: #333;
+}
+a.logo {
+  background: url(../images/icon.ico) no-repeat center center / cover; /* taken from https://www.freeiconspng.com/downloadimg/17548 */
+  color: transparent;
+  width: 32px;
+  height: 32px;
+  margin: 7px 0;
+  float: left;
+}
+
+a.backgroundImg {
+  width: 520px;
+  float: left;
+  background: url(../images/cup-of-coffee-ge735a0503_1280.jpg ) no-repeat center center / cover; /* image taken from:https://pixabay.com/photos/cup-of-coffee-laptop-office-macbook-1280537/ */
+  color: white;
+  /* line-height: 650px; */
+  height: 400px;
+  padding: 0 40px;
+  font-size: 4em;
+}
+
+ul.nv-l {
+  float: left;
+  margin-left: 20px;
+}
+
+ul.nv {
+  float: right;
+  margin-right: -10px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 30px;
+}
+
+.ra-r {
+  /* background: red; */
+  margin-top: 20px;
+  overflow: auto;
+}
+
+p {
+  width: 500px;
+  font-size: 15px;
+}
+
+.container {
+  overflow: auto;
+  margin-top: 40px;
+}
+a.sh-c:hover {
+  color: transparent;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #222;
+  width: 230px;
+  padding: 5px;
+  min-height: 100px;
+  margin-left: -200px;
+  line-height: initial;
+  margin-top: -10px;
+  z-index: 9999;
+  border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  padding: 4px 15px;
+  text-decoration: none;
+  font-weight: 500;
+  /* font-size: 15px; */
+  height: auto;
+  line-height: initial;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {/*background-color: rgba(255, 255, 255, 0.05);*/color: #fff;/* color: rgba(0, 0, 0, 1); */}
+.dropdown-arrow {
+  /* content: ""; */
+  position: absolute;
+  bottom: 100%;
+  left: 225px;
+  border: 5px solid transparent;
+  border-bottom-color: #222;
+  border-top-width: 0;
+  height: 0;
+  width: 0;
+}
+
+.headTitle {
+  text-align: center;
+  padding-right: 35%;
+}
+
+.table-inverse {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+.table-inverse-bold {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+  font-weight: bolder;
+}
+
+hr.line {
+  border-top: 5px dashed #ff2f00;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.titleCenter {
+  text-align: center;
+}
+
+
+.bold {
+  font-weight: bolder;
+}

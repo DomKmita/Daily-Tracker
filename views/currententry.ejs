@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    
+        <% include partials/head %>
+        <div class="wrapper">
+            <h1 class=titleCenter><%= title %></h1>
+            <body>
+            <table class="table-inverse">
+    <thead>
+      <tr>
+        <th> username </th>
+        <th> education </th>
+        <th> shopping </th>
+        <th> browse </th>
+        <th> social </th>
+        <th> date </th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <% for(var i=0; i < entrylist.length; i++) { %>
+     <tr>
+
+      <td><%= entrylist[i].username %></td>
+      <td><%= entrylist[i].education %></td>
+      <td><%= entrylist[i].shopping %></td>
+      <td><%= entrylist[i].browse %></td>
+      <td><%= entrylist[i].social %></td>
+      <td><%= entrylist[i].date %></td>
+      <td><a href="/entries/update/<%= entrylist[i]._id %>">Update</a></td>
+       <td><a href="/entries/delete/<%= entrylist[i]._id %>">Delete</a></td>
+
+
+     </tr>
+  <% } %>
+    </tbody>
+
+  </table>
+
+</body>
+</div>
+</div>
+<% include partials/foot %>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <% include partials/head %>
+    <div class="wrapper">
+        <div class="headTitle"><h1><%= title %></h1></div>
+        <div class="ra-r"></div>
+        <body>
+
+            <div style="margin:0 auto ; width:50%; padding:20px">
+              <form action="/entries/create" method="post">
+              <label>username</label><br>
+              <input type="text" name="username">
+              <br /> <br />
+              <label>Education usage</label><br>
+              <input type="text" name="education">
+                <br /> <br />
+                <label>Shopping duration</label><br>
+              <input type="text" name="shopping">
+              <br /> <br />
+              <label>browsing duration</label><br>
+              <input type="text" name="browse">
+              <br /> <br />
+              <label>social media duration</label><br>
+              <input type="text" name="social">
+              <br /> <br />
+              <label>Date</label><br>
+              <input id="today" type="date" name="date">
+              <br /> <br />
+              <button>submit</button>
+                </form>
+              </div>
+            </body>
+    </div>
+</div>
+  </body>
+    <script>
+      document.getElementById('today').valueAsDate = new Date;
+    </script>
+</html>
